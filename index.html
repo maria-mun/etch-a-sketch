@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Etch-a-sketch</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Etch-a-sketch</h1>
+        <div class="settings">
+            <label>Pick size:</label><input class="size input" type="text" value="50">
+            <label>Pick color:</label><select class="color input">
+                <option value="black" >black</option>
+                <option value="red">red</option>
+                <option value="orange">orange</option>
+                <option value="yellow">yellow</option>
+                <option value="green">green</option>
+                <option value="blue">blue</option>
+                <option value="white">white</option>
+            </select>
+            <div class="color-indicator"></div>
+            <button class="button clear" type="button">Clear</button>
+        </div>
+
+        <div class="grid"></div>
+    </div>
+</body>
+</html>

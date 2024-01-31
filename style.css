@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(138, 150, 165);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgb(179, 189, 198);
+    border-radius: 1em;
+    padding: 2em;
+    margin: 3em auto;
+}
+
+.settings {
+    margin: 2em 0 0.5em;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.size.input {
+    width: 6em;
+}
+
+.color-indicator {
+    height: 15px;
+    width: 15px;
+    background-color: black;
+}
+
+.clear {
+    margin-left: auto;
+}
+
+.grid {
+    height: 401px;
+    width: 401px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.square {
+    flex: auto;
+}
