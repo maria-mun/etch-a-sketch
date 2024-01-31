@@ -30,7 +30,11 @@ body {
 }
 
 .size.input {
-    width: 6em;
+    width: 5em;
+}
+
+.button.confirm {
+    width: 1.5em;
 }
 
 .color-indicator {
@@ -46,7 +50,7 @@ body {
 .grid {
     height: 401px;
     width: 401px;
-    border: 2px solid black;
+    border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;

@@ -4,6 +4,7 @@ const sizeInput = document.querySelector(".size.input");
 const colorInput = document.querySelector(".color.input");
 const colorIndicator = document.querySelector(".color-indicator");
 const clearButton = document.querySelector(".button.clear");
+const confirmButton = document.querySelector(".button.confirm");
 
 
 let size = sizeInput.value;
@@ -20,6 +21,14 @@ sizeInput.addEventListener("keydown", (event) => {
         color = colorInput.value;
         drawColor(color);
     };
+}); 
+
+confirmButton.addEventListener("click", (event) => {
+    deleteSquares();
+    size = sizeInput.value;
+    makeGrid(size);
+    color = colorInput.value;
+    drawColor(color);
 }); 
 
 
@@ -41,7 +50,7 @@ clearButton.addEventListener("click", () => {
 function drawColor (color) {
     const squares = document.querySelectorAll(".square");
     squares.forEach((square) => {
-        square.addEventListener("click", () => {
+        square.addEventListener("mousemove", () => {
             square.style.backgroundColor = color;
         });
     });
